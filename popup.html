@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>MiniScreen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="text-center border rounded-0 border-dark" id="linkpage"
+        style="padding: 10px;background-color: #c3c2a2;">
+        <h2 style="color: rgb(74,78,81); font-family: 'Fredoka One', cursive;">MiniScreen</h2>
+        <hr>
+        <p style="color: red;" id='error'>Enter complete URL</p>
+        <div class="input-append btn-group">
+            <input type="url" id="linkinput" placeholder="URL" name="url" inputmode="url" required="" autocomplete="on"
+                value="https://">
+            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+            </a>
+            <div role="menu" class="dropdown-menu text-center">
+                <h5 class="dropdown-header" style="color: whitesmoke;font-family: 'Raleway', sans-serif;">Suggestions
+                </h5>
+                <div class="row no-gutters">
+                    <div class="col dropdown-item" id="lgoogle"><img src="assets/img/google.svg" width="24" height="24">
+                    </div>
+                    <div class="col dropdown-item" id="lyt"><img src="assets/img/youtube.svg" width="24" height="24">
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col dropdown-item" id="lli"><img src="assets/img/linkedin.svg" width="24" height="24">
+                    </div>
+                    <div class="col dropdown-item" id="lws"><img src="assets/img/whatsapp.svg" width="24" height="24">
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col dropdown-item" id="lam"><img src="assets/img/amazon.svg" width="24" height="24">
+                    </div>
+                    <div class="col dropdown-item" id="lsf"><img src="assets/img/stackoverflow-com.svg" width="24"
+                            height="24">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding: 5px;"><button class="btn btn-success" id="link" type="submit">Enter</button></div>
+    </div>
+    <div class="text-center" id="framepage" style="display: none;">
+        <div class="row no-gutters">
+            <div class="col text-center">
+                <button class="btn btn-danger btn-block" style="border-radius: 0;" type="button" id="back">Back&nbsp;
+                    <i class="typcn typcn-arrow-back"></i>
+                </button>
+            </div>
+            <div class="col text-center">
+                <button class="btn btn-warning btn-block" style="border-radius: 0;" type="button" id="newtab">New
+                    Tab&nbsp;
+                    <i class="typcn typcn-tabs-outline"></i>
+                </button>
+            </div>
+        </div>
+        <iframe id="myframe" src="" width="400" height="400"></iframe>
+        <div id="tooltip" href="#" data-toggle="tooltip" data-placement="right" title="Resize!">
+        </div>
+    </div>
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
+    <script src="assets/link.js"></script>
+</body>
+
+</html>

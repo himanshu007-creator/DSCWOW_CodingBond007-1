@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "MiniScreen",
+    "description": "This extension will help you quickly access any website without changing tabs.",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs"
+    ]
+}

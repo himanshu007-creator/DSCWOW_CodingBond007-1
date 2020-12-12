@@ -1,0 +1,22 @@
+#myframe {
+  resize: both;
+  overflow: scroll;
+  height: 40ch;
+  width: 40ch;
+  min-height: 30ch;
+  min-width: 30ch;
+  max-height: 60ch;
+  max-width: 60ch;
+}
+#tooltip{
+  right:0;
+  margin-right: 10px;
+  bottom: 15px;
+  position: absolute;
+}
+#framepage {
+  display: none;
+}
+.dropdown-menu {
+  background-color: rgb(74,78,81);
+} 
